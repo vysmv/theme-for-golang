@@ -1,17 +1,17 @@
 {
-	"name": "goland-exact-theme",
-	"displayName": "GoLand Exact Theme",
-	"description": "A custom dark theme tuned to closely match the GoLand dark UI and Go syntax colors.",
-	"version": "1.0.1",
-	"publisher": "sagaryadaviitk",
+	"name": "theme-for-golang",
+	"displayName": "Theme for Golang",
+	"description": "A GoLand-inspired dark theme with enhanced Go syntax highlighting.",
+	"version": "1.0.0",
+	"publisher": "vysmv",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sagaryadaviitk/goland-exact-theme.git"
+		"url": "https://github.com/vysmv/theme-for-golang"
 	},
-	"homepage": "https://github.com/sagaryadaviitk/goland-exact-theme",
+	"homepage": "https://github.com/vysmv/theme-for-golang",
 	"bugs": {
-		"url": "https://github.com/sagaryadaviitk/goland-exact-theme/issues"
+		"url": "https://github.com/vysmv/theme-for-golang/issues"
 	},
 	"main": "./extension.js",
 	"engines": {
@@ -22,7 +22,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:golandExactTheme.revealActiveFile",
+		"onCommand:themeForGolang.revealActiveFile",
 		"onLanguage:go",
 		"onStartupFinished"
 	],
@@ -36,21 +36,21 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "GoLand Exact Dark",
+				"label": "Theme for Golang",
 				"uiTheme": "vs-dark",
-				"path": "./themes/goland-exact-dark-color-theme.json"
+				"path": "./themes/theme-for-golang.json"
 			}
 		],
 		"iconThemes": [
 			{
-				"id": "goland-exact-icons",
-				"label": "GoLand Exact Icons",
+				"id": "theme-for-golang-icons",
+        		"label": "Theme for Golang Icons",
 				"path": "./icons/goland-exact-icons.json"
 			}
 		],
 		"commands": [
 			{
-				"command": "golandExactTheme.revealActiveFile",
+				"command": "themeForGolang.revealActiveFile",
 				"title": "Reveal Active File",
 				"icon": "$(target)"
 			}
@@ -58,7 +58,7 @@
 		"menus": {
 			"view/title": [
 				{
-					"command": "golandExactTheme.revealActiveFile",
+					"command": "themeForGolang.revealActiveFile",
 					"when": "view == workbench.explorer.fileView",
 					"group": "navigation@18"
 				}
@@ -66,9 +66,7 @@
 		}
 	},
 	"scripts": {
-		"validate": "node scripts/validate.js",
-		"package": "npm run validate && npx @vscode/vsce package",
-		"vscode:prepublish": "npm run validate"
+    	"package": "vsce package"
 	},
 	"icon": "resources/icon.png",
 	"galleryBanner": {
@@ -83,10 +81,5 @@
 			"supported": true
 		},
 		"virtualWorkspaces": true
-	},
-	"__metadata": {
-		"installedTimestamp": 1783341829748,
-		"targetPlatform": "undefined",
-		"size": 57623
 	}
 }

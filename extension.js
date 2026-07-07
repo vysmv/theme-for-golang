@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 
-const THEME_NAME = 'GoLand Exact Dark';
+const THEME_NAME = 'Theme for Golang';
 const IDENTIFIER = '[A-Za-z_][A-Za-z0-9_]*';
 const INTERFACE_DECLARATION = new RegExp(
   `^\\s*type\\s+${IDENTIFIER}(?:\\[[^\\]]+\\])?\\s+interface\\s*\\{`
@@ -377,7 +377,7 @@ function createImplementationInlayHintsProvider() {
         label.tooltip = 'Go to implementation';
         label.command = {
           title: 'Go to implementation',
-          command: 'golandExactTheme.goToImplementationAt',
+          command: 'themeForGolang.goToImplementationAt',
           arguments: [document.uri, lineNumber, start],
         };
 
@@ -433,7 +433,7 @@ function activate(context) {
   };
 
   const revealActiveFile = vscode.commands.registerCommand(
-    'golandExactTheme.revealActiveFile',
+    'themeForGolang.revealActiveFile',
     async () => {
       await vscode.commands.executeCommand('workbench.files.action.showActiveFileInExplorer');
     }
@@ -446,7 +446,7 @@ function activate(context) {
   };
 
   const goToImplementationAt = vscode.commands.registerCommand(
-    'golandExactTheme.goToImplementationAt',
+    'themeForGolang.goToImplementationAt',
     async (uri, line, character) => {
       const document = await vscode.workspace.openTextDocument(uri);
       const editor = await vscode.window.showTextDocument(document, { preview: false });

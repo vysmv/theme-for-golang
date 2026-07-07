@@ -1,4 +1,4 @@
-# GoLand Exact Theme
+# Theme for Golang
 
 A VS Code theme and lightweight companion extension tuned to make the editor feel closer to dark GoLand, especially for Go projects.
 
