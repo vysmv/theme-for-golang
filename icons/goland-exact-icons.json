@@ -1,0 +1,156 @@
+{
+  "$schema": "vscode://schemas/icon-theme",
+  "iconDefinitions": {
+    "folder": {
+      "iconPath": "./folder.svg"
+    },
+    "folderExpanded": {
+      "iconPath": "./folder-open.svg"
+    },
+    "rootFolder": {
+      "iconPath": "./folder-root.svg"
+    },
+    "rootFolderExpanded": {
+      "iconPath": "./folder-root-open.svg"
+    },
+    "file": {
+      "iconPath": "./file.svg"
+    },
+    "go": {
+      "iconPath": "./go.svg"
+    },
+    "goTest": {
+      "iconPath": "./go-test.svg"
+    },
+    "goMod": {
+      "iconPath": "./go-mod.svg"
+    },
+    "goSum": {
+      "iconPath": "./go-sum.svg"
+    },
+    "md": {
+      "iconPath": "./markdown.svg"
+    },
+    "yaml": {
+      "iconPath": "./yaml.svg"
+    },
+    "json": {
+      "iconPath": "./json.svg"
+    },
+    "makefile": {
+      "iconPath": "./makefile.svg"
+    },
+    "shell": {
+      "iconPath": "./shell.svg"
+    },
+    "markdown": {
+      "iconPath": "./markdown.svg"
+    },
+    "csv": {
+      "iconPath": "./csv.svg"
+    },
+    "sql": {
+      "iconPath": "./sql.svg"
+    },
+    "proto": {
+      "iconPath": "./proto.svg"
+    },
+    "xml": {
+      "iconPath": "./xml.svg"
+    },
+    "toml": {
+      "iconPath": "./toml.svg"
+    },
+    "properties": {
+      "iconPath": "./properties.svg"
+    },
+    "tsv": {
+      "iconPath": "./tsv.svg"
+    },
+    "python": {
+      "iconPath": "./python.svg"
+    },
+    "dockerfile": {
+      "iconPath": "./text.svg"
+    },
+    "gitignore": {
+      "iconPath": "./gitignore.svg"
+    },
+    "license": {
+      "iconPath": "./license.svg"
+    },
+    "text": {
+      "iconPath": "./text.svg"
+    },
+    "lock": {
+      "iconPath": "./text.svg"
+    },
+    "output": {
+      "iconPath": "./text.svg"
+    },
+    "javascript": {
+      "iconPath": "./javascript.svg"
+    }
+  },
+  "folder": "folder",
+  "folderExpanded": "folderExpanded",
+  "rootFolder": "rootFolder",
+  "rootFolderExpanded": "rootFolderExpanded",
+  "file": "file",
+  "fileExtensions": {
+    "go": "go",
+    "md": "markdown",
+    "yaml": "yaml",
+    "yml": "yaml",
+    "json": "json",
+    "sh": "shell",
+    "command": "shell",
+    "csv": "csv",
+    "sql": "sql",
+    "proto": "proto",
+    "xml": "xml",
+    "iml": "xml",
+    "html": "xml",
+    "toml": "toml",
+    "properties": "properties",
+    "tsv": "tsv",
+    "py": "python",
+    "js": "javascript",
+    "txt": "text",
+    "patch": "text",
+    "lock": "lock",
+    "mdc": "markdown",
+    "out": "output",
+    "mod": "goMod",
+    "sum": "goSum"
+  },
+  "fileNames": {
+    "Makefile": "makefile",
+    ".gitignore": "gitignore",
+    ".cursorignore": "gitignore",
+    ".gitkeep": "gitignore",
+    "Dockerfile": "dockerfile",
+    "go.mod": "goMod",
+    "go.sum": "goSum",
+    "LICENSE": "license",
+    "LICENSE.txt": "license",
+    "README.md": "markdown",
+    "buf.yaml": "yaml",
+    "buf.gen.yaml": "yaml",
+    "buf.work.yaml": "yaml",
+    "buf.lock": "lock",
+    "sonar-project.properties": "properties",
+    ".trivy-intellij-last.json": "json",
+    ".trivy-intellij-last.command": "shell",
+    "generateEnv": "shell",
+    "argo-pipeline": "text",
+    ".workspace-repos.tsv": "tsv"
+  },
+  "languageIds": {
+    "go": "go"
+  },
+  "fileNamesAssociations": {
+    "*_test.go": "goTest"
+  },
+  "hidesExplorerArrows": false
+}

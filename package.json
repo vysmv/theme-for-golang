@@ -1,0 +1,92 @@
+{
+	"name": "goland-exact-theme",
+	"displayName": "GoLand Exact Theme",
+	"description": "A custom dark theme tuned to closely match the GoLand dark UI and Go syntax colors.",
+	"version": "1.0.1",
+	"publisher": "sagaryadaviitk",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sagaryadaviitk/goland-exact-theme.git"
+	},
+	"homepage": "https://github.com/sagaryadaviitk/goland-exact-theme",
+	"bugs": {
+		"url": "https://github.com/sagaryadaviitk/goland-exact-theme/issues"
+	},
+	"main": "./extension.js",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:golandExactTheme.revealActiveFile",
+		"onLanguage:go",
+		"onStartupFinished"
+	],
+	"keywords": [
+		"theme",
+		"goland",
+		"jetbrains",
+		"go",
+		"dark"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "GoLand Exact Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/goland-exact-dark-color-theme.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "goland-exact-icons",
+				"label": "GoLand Exact Icons",
+				"path": "./icons/goland-exact-icons.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "golandExactTheme.revealActiveFile",
+				"title": "Reveal Active File",
+				"icon": "$(target)"
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "golandExactTheme.revealActiveFile",
+					"when": "view == workbench.explorer.fileView",
+					"group": "navigation@18"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"validate": "node scripts/validate.js",
+		"package": "npm run validate && npx @vscode/vsce package",
+		"vscode:prepublish": "npm run validate"
+	},
+	"icon": "resources/icon.png",
+	"galleryBanner": {
+		"color": "#2B2D30",
+		"theme": "dark"
+	},
+	"extensionKind": [
+		"ui"
+	],
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		},
+		"virtualWorkspaces": true
+	},
+	"__metadata": {
+		"installedTimestamp": 1783341829748,
+		"targetPlatform": "undefined",
+		"size": 57623
+	}
+}
